@@ -13,7 +13,6 @@ COPY . .
 
 # Install Sbt
 RUN wget https://dl.bintray.com/sbt/debian/sbt-0.13.9.deb && dpkg -i sbt-0.13.9.deb
-RUN sbt package
 
 # Default command
 CMD [sbt test]
