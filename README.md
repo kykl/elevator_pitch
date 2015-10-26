@@ -41,10 +41,14 @@ i.e. new ControlSystemImpl(numberOfElevators, maxFloor) with LoggedControlSystem
 
 **Build, Run & Test Instructions**
 
-Required build and run tools:
+If you have docker, you can just run or test like this:
+*  docker run -it kykl/elevator_pitch sbt test
+*  docker run -it kykl/elevator_pitch sbt run
+
+Otherwise, you need have these build and run tools:
 * sbt launcher version 0.13.7
 * scala  2.11.7
 
-Run & Test
-* Run - sbt run
+and then:
 * Test - sbt test
+* Run - sbt run
