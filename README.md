@@ -30,8 +30,8 @@ The scheduling algorithm used is analogous to [Shortest Seek First] (https://en.
 
 **Known Issuses**
 
-* Thread Safety - none has been considered. If we are to implement this, most likely I would put the state of the elevator abstracted by an Akka/Actor using its built in one message at a time guarantee.
-* Number of pickups per elevator - assuming it has infinite capacity which is not realistic! We could put a max limit check and ignore the elevator to accomplish this.
+* Thread Safety - none has been considered. If we are to implement this, most likely, we could put the state of the elevator abstracted by an Akka/Actor using its built in one message at a time guarantee.
+* Number of pickups per elevator - assuming it has infinite capacity is not realistic! We could put a max limit check and ignore the elevator when it reaches the capacity.
 * The main program (App) is very limiting. It has one use case; however, we have quite a few unit tests which can be run.
 
 **Worth Mentioning Implementation**
