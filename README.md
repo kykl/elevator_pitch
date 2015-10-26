@@ -1,17 +1,15 @@
 Elevator Control System
 =======================
-Design and implement an elevator control system ins Scala programming language. This elevator control system should be able to handle a few elevators — up to 16.
+Design and implement an elevator control system in Scala programming language. This elevator control system can handle up to 16 elevators and provide an interface for:
 
-You can use the language of your choice to implement an elevator control system. In the end, your control system should provide an interface for:
-
-Querying the state of the elevators (what floor are they on and where they are going),
-receiving an update about the status of an elevator,
-receiving a pickup request,
-time-stepping the simulation.
+* Querying the state of the elevators (what floor are they on and where they are going),
+* receiving an update about the status of an elevator,
+* receiving a pickup request,
+* time-stepping the simulation.
 
 For example, we could imagine in Scala an interface like this:
 
-<code>
+```
 trait ControlSystem {
   def status(): Seq[Status]
 
@@ -23,7 +21,7 @@ trait ControlSystem {
 
   def step()
 }
-</code>
+```
 
 The scheduling algorithm used is analogous to [Shortest Seek First] (https://en.wikipedia.org/wiki/Shortest_seek_first). The algorithm, mostly covered in ControlSystemImpl.seek, goes in this order:
 
