@@ -11,6 +11,7 @@ time-stepping the simulation.
 
 For example, we could imagine in Scala an interface like this:
 
+<code>
 trait ControlSystem {
   def status(): Seq[Status]
 
@@ -22,6 +23,7 @@ trait ControlSystem {
 
   def step()
 }
+</code>
 
 The scheduling algorithm used is analogous to [Shortest Seek First] (https://en.wikipedia.org/wiki/Shortest_seek_first). The algorithm, mostly covered in ControlSystemImpl.seek, goes in this order:
 
