@@ -42,7 +42,7 @@ i.e. new ControlSystemImpl(numberOfElevators, maxFloor) with LoggedControlSystem
 **Build, Run & Test Instructions**
 
 If you have docker, you can just build, then run or test like this:
-* Skip this to pull from docker hub, `docker build -t kykl/elevator_pitch .`
+* Pull: `docker pull kykl/elevator_pitch` or Build: clone this project `docker build -t kykl/elevator_pitch .`
 * Test: `docker run -it kykl/elevator_pitch test`
 * Run: `docker run -it kykl/elevator_pitch run`
 
