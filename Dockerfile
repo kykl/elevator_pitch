@@ -5,14 +5,11 @@
 #
 
 # Pull base image
-FROM dockerize/java:1.7
+FROM dockerize/sbt
 
-MAINTAINER Dockerize "http://dockerize.github.io"
+MAINTAINER kenneth.lee@gmail.com
 
 COPY . .
 
-# Install Sbt
-RUN wget https://dl.bintray.com/sbt/debian/sbt-0.13.9.deb && dpkg -i sbt-0.13.9.deb
-
 # Default command
-CMD [sbt test]
+CMD ["sbt", "test"]
