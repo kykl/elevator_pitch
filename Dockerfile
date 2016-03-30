@@ -5,11 +5,9 @@
 #
 
 # Pull base image
-FROM dockerize/sbt
+FROM williamyeh/sbt 
 
 MAINTAINER kenneth.lee@gmail.com
 
-COPY . .
+COPY . /app
 
-# Default command
-CMD ["sbt", "test"]

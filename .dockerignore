@@ -1,2 +1,4 @@
 .git*
 .idea*
+project/target
+project/project
